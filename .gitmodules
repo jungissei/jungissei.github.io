@@ -1,0 +1,6 @@
+[submodule "jquery.modal"]
+	path = jquery.modal
+	url = git@github.com:jungissei/jquery.modal.git
+[submodule "common"]
+	path = common
+	url = git@github.com:jungissei/common.git
