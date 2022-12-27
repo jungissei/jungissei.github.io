@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use './mixin' as *;
+
+// ----------------------------------------------------------------------------
+// PC
+// ----------------------------------------------------------------------------
+@include mq(pc){
+
+  body{
+    background: #1a1e2e;
+    color: #fff;
+    font-family: Inter,Helvetica Neue,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+  }
+}
+
+
+
+
+// ----------------------------------------------------------------------------
+// SP
+// ----------------------------------------------------------------------------
+@include mq(sp){
+
+  body{
+    background: #1a1e2e;
+    color: #fff;
+    font-family: Inter,Helvetica Neue,Arial,Hiragino Kaku Gothic ProN,Hiragino Sans,Meiryo,sans-serif;
+  }
+}

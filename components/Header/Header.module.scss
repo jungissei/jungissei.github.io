@@ -1,0 +1,41 @@
+@use '../../styles/mixin' as *;
+
+
+// ----------------------------------------------------------------------------
+// PC
+// ----------------------------------------------------------------------------
+@include mq(pc){
+  #template_header{
+    @include page_layout($layout : 1, $devise : pc);
+
+    .layout_inner{
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .page_ttl{
+    font-size: 35px;
+    font-weight: bold;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// SP
+// ----------------------------------------------------------------------------
+@include mq(sp){
+  #template_header{
+    @include page_layout($layout : 1, $devise : sp);
+
+    .layout_inner{
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+
+  .page_ttl{
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

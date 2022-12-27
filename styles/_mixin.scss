@@ -1,0 +1,60 @@
+@use 'sass:math';
+
+// ----------------------------------------------------------------------------
+// Breakpoint
+// ----------------------------------------------------------------------------
+$breakpoints: (
+  pc: 'screen and (min-width: 768px)',
+  sp: 'screen and (max-width: 767px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoints, $bp)} {
+    @content;
+  }
+}
+
+
+// ----------------------------------------------------------------------------
+// Page Layout
+// ----------------------------------------------------------------------------
+@mixin page_layout($layout, $devise){
+
+  // --------------------------------------
+  // Page Layout 1
+  // --------------------------------------
+  @if $layout == 1{
+    @if $devise == 'pc'{
+      &.page_layout{
+        .layout_inner{
+          .layout_container{
+            width: 828px;
+            margin-right: auto;
+            margin-left: auto;
+
+            .layout_width{
+              width: calc(100% - 48px);
+              margin-right: auto;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+    @if $devise == 'sp'{
+      &.page_layout{
+        .layout_inner{
+          .layout_container{
+
+            .layout_width{
+              width: calc(100% - 30px);
+              margin-right: auto;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
