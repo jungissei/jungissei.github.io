@@ -13,11 +13,29 @@ export function RepositoryTopBlock() {
 
               <a
                 className={styles.item}
-                href="https://github.com/jungissei/jquery.modal"
+                href="/jquery.modal/"
                 target="_blank"
               >
                 <p className={styles.emoji}>&#128276;</p>
                 <p className={styles.name}>jquery.modal</p>
+              </a>
+
+              <a
+                className={styles.item}
+                href="/jquery.global_menu/"
+                target="_blank"
+              >
+                <p className={styles.emoji}>&#128005;</p>
+                <p className={styles.name}>jquery.global_menu</p>
+              </a>
+
+              <a
+                className={styles.item}
+                href="/jquery.go_top/"
+                target="_blank"
+              >
+                <p className={styles.emoji}>&#128660;</p>
+                <p className={styles.name}>jquery.go_top</p>
               </a>
 
             </div>
